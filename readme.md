@@ -11,3 +11,8 @@
 ## Semana 2 
 * Aprendendo diagragramas em caso de uso
 * Exercícicos Práticos : Diagrama de casos de uso
+## Semana 3 (19/08)
+
+🧠Objetivos de Aprendizagem da Semana 3
+Traduzir um fluxo de eventos de um caso de uso em um Diagrama de Sequência;
+Compreender a lógica de interação entre objetos em um Diagrama de Sequência.
