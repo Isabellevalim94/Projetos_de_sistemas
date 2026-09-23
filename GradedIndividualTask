@@ -1,1 +1,38 @@
-
+Tarefa 1 – Casos de Uso
+Atores
+Cliente – consulta o cardápio, escolhe produtos e paga.
+Atendente – registra a venda, recebe o pagamento e emite o comprovante.
+Gerente – administra o cardápio (produtos, preços, estoque) e consulta vendas.
+Casos de uso principais
+Consultar cardápio
+Realizar pedido (escolher produtos e quantidades)
+Calcular total do pedido
+Efetuar pagamento (dinheiro, PIX, cartão)
+Finalizar venda / emitir comprovante
+Cadastrar produto
+Alterar preço
+Atualizar estoque (entrada/saída)
+Remover produto
+Consultar vendas realizadas
+Caso de uso 1 – Realizar Pedido e Pagar
+Objetivo: registrar a compra de um cliente e receber o pagamento.
+Atores: Cliente e Atendente.
+Fluxo principal:
+O cliente consulta o cardápio.
+O cliente escolhe um ou mais produtos e informa as quantidades.
+O atendente adiciona cada item ao pedido.
+O sistema calcula o subtotal de cada item e o total do pedido.
+O cliente escolhe a forma de pagamento e informa o valor.
+O sistema verifica se o valor pago cobre o total.
+O sistema baixa o estoque, finaliza a venda e emite o comprovante (com troco, se houver).
+Fluxo alternativo (pagamento insuficiente): no passo 6, se o valor pago for menor que o total, o sistema recusa a finalização e pede novo pagamento ou ajuste do pedido.
+Exceção (sem estoque): se algum produto não tiver estoque suficiente, o sistema impede a inclusão/finalização do item.
+Caso de uso 2 – Cadastrar Produto
+Objetivo: incluir um novo produto no cardápio.
+Ator: Gerente.
+Fluxo principal:
+O gerente solicita o cadastro de um produto.
+O gerente informa código, nome, categoria, preço e estoque inicial.
+O sistema valida os dados (código único, preço não negativo).
+O sistema grava o produto e confirma o cadastro.
+Fluxo alternativo (código já existente): no passo 3, se o código já estiver em uso, o sistema avisa e solicita outro
